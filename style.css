@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: var(--text-base);
+  overflow: hidden;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+.page-container {
+  display: flex;
+}
+
+.logo {
+  margin: 10% 10%;
+}
+
+.content-container {
+  background-color: var(--background);
+  width: 50%;
+  height: 100vh;
+}
+
+.form-background-container {
+  width: 572px;
+  height: 530px;
+  background-color: var(--form-background);
+  margin: 10% auto;
+  border-radius: 5px;
+}
+
+.image-aside {
+  width: 50%;
+  height: 100vh;
+  background-image: url(images/side-image-2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-title {
+  width: 350px;
+  margin: 10% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title h1 {
+  font-size: 24px;
+  color: var(--text-title);
+}
+
+.form-title h1::before{
+  content: url(images/log-in.svg);
+  padding-right: 10px;
+}
+
+.form-title h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.form-container {
+  width: 350px;
+  margin: 20px auto;
+}
+
+.form-container fieldset {
+  border: none;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container img {
+  position: absolute;
+  top: 52%;
+  left: 3%;
+}
+
+.password-input-container img:nth-of-type(2) {
+  position: absolute;
+  left: 90%;
+}
+
+.form-container fieldset input[type="email"], input[type="password"] {
+  height: 45px;
+  padding-left: 35px;
+  padding-top: 1px;
+  background-color: var(--form-background);
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.form-container fieldset input[type="email"]:focus, input[type="password"]:focus {
+  border: 3px solid var(--primary-color);
+}
+
+.checkbox-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox-container a {
+  position: absolute;
+  right: 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border: 1px solid var(--text-base);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  content: url(images/check.svg);
+  background-color: #ffc632;
+  border: none;
+}
+
+.form-container button[type="submit"] {
+  width: 100%;
+  height: 51px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--form-background);
+  font-weight: 600;
+  font-size: 18px;
+  color: #473404;
+  cursor: pointer;
+}
+
+.form-container h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+.form-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+}
